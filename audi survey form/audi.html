@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="audi.css">
+    <title> Audi survey form</title>
+    </head>
+    <body>
+    <main id="main">
+        <div>
+            <h1 id="title">
+            Audi Motors Survey Form
+            </h1>
+        </div>
+
+        <div>
+             <p id="description">
+             Thank you for taking out time to help us improve on our platform.
+             </p>
+        </div>
+
+
+        <form id="survey-form">
+            <div>
+                 <label for="name" id="name-label">Name</label>
+                 <input id="name" type="name" required placeholder="Enter your name">
+                 <br>
+
+                 <label for="email" id="email-label">E-mail</label>
+                 <input id="email" type="email" required placeholder="Enter your E-mail">
+                 <br>
+
+                 <label for="number" id="number-label">Age (Optional)</label>
+                <input id="number" type="number" required placeholder="Age" min="0" max="100">
+                <br>
+            </div>
+
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown">
+                    <option value="">Select current role </option>
+                    <option value="">Student</option>
+                    <option value="">Full Time Job</option>
+                    <option value="">Full Time Learner</option>
+                    <option value="">Prefer not to say</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Would you recommend audi motors to a friend?</p>
+                <input type="radio" id="definitely" name="recommed" value="Definitely">
+                <label for="definitely" id="definitely-label">Definitely</label><br>
+                <input type="radio" id="maybe" name="recommed" value="Maybe">
+                <label for="maybe" id="maybe-label">Maybe</label><br>
+                <input type="radio" id="not sure" name="recommed" value="not sure">
+                <label for="not sure" id="not sure-label">Not sure</label><br>
+            </div>
+           
+            <div>
+             <p>What's your favourite features of audi motors</p>
+                <select  id="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="">Power Steering</option>
+                    <option value="">Power Windows Front</option>
+                    <option value="">Alloy Wheels</option>
+                </select>
+            </div>
+
+            <div>
+                <p>What would like to see improved? (Check all that apply)</p>
+                <input type="checkbox" value="multi-function steering wheel" id="multi-function steering wheel">
+                <label for="multi-function steering wheel">Multi-function Steering Wheel</label>
+                <br>
+
+                <input type="checkbox" value="fog lights - front" id="fog lights - front">
+                <label for="fog lights - front">Fog Lights - Front</label>
+                <br>
+
+                <input type="checkbox" value="driver airbag" id="driver airbag">
+                <label for="driver airbag">Driver Airbag</label>
+                <br>
+
+                <input type="checkbox" value="anti lock braking system" id="anti lock braking system">
+                <label for="anti lock braking system">Anti Lock Braking System</label>
+                <br>
+
+                <input type="checkbox" value="power steering" id="power steering">
+                <label for="power steering">Power Steering</label>
+                <br>
+
+                <input type="checkbox" value="power windows front" id="power windows front">
+                <label for="power windows front">Power Windows Front</label>
+                <br>
+
+                <label for=""></label>
+                <input type="checkbox" value="air conditioner" id="air conditioner">
+                <label for="air conditioner">Air Conditioner</label>
+                <br>
+
+                <input type="checkbox" value="passenger airbag" id="passenger airbag">
+                <label for="passenger airbag">Passenger Airbag</label>
+                <br>
+
+                <input type="checkbox" value="alloy wheels" id="alloy wheels">
+                <label for="alloy wheels">Alloy Wheels</label>
+                <br>
+
+                <input type="checkbox" value="turbo charger" id="turbo charger">
+                <label for="turbo charger">Turbo Charger</label>
+                <br>
+
+                <input type="checkbox" value="boot space" id="boot space">
+                <label for="boot space">Boot Space</label>
+            </div>
+
+            <div>
+                <p>Any comments or suggestions?</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+     </main>
+         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
