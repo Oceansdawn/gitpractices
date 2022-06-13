@@ -1,0 +1,72 @@
+
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* nav{
+    height: 80px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1oovv;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: lightgray;
+
+}
+
+@media screen and min-width[1000px] {
+    #projects {
+        margin-bottom: 20px;
+    }
+}
+
+#projects{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+#projects a {
+    text-decoration: none;
+}
+
+#project-title{
+    flex-basis: 15%;
+    border: 1px solid black;
+    padding: 20px 40px;
+    width: 300px;
+    text-align: center;
+    height: 200px;
+}
+
+#profile-link{
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-color: lightgray;
+}
+
+#profile-link a {
+    text-decoration: none;
+    font-size: 25px;
+
+}
